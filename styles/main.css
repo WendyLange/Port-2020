@@ -38,13 +38,15 @@ span {
 
 
 /*Animated arrow section*/
-.arrow{
+#arrow{
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 1;
 }
-.arrow span{
+
+#arrow span{
     display: block;
     width: 15px;
     height: 15px;
@@ -54,10 +56,12 @@ span {
     margin: -10px;
     animation: animate 2s infinite;
 }
-.arrow span:nth-child(2){
+
+#arrow span:nth-child(2){
     animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
+
+#arrow span:nth-child(3){
     animation-delay: -0.4s;
 }
 @keyframes animate {
@@ -74,6 +78,13 @@ span {
     }
 }
 
+
+
+
+
+
+
+
 .wrappercontent {
 	display: grid;
 	/*padding: 2em;*/
@@ -86,7 +97,7 @@ span {
 		"qual qual qual qual"
 		"work work work work"
 		"workone worktwo workthree workfour"
-		"hired hired hired hired";
+		"hired hired hiredimg hiredimg";
 }
 
 .start{
@@ -147,6 +158,21 @@ span {
 	grid-area: hired;
 	padding: 2em;
 	background-color: pink;
+}
+
+.hire__side {
+	grid-area: hiredimg;
+	padding: 2em;
+}
+
+.hire__side img {
+	min-height: 300px;
+	max-height: 500px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width:50%;
+  	border-radius: 25px;
 }
 
 
