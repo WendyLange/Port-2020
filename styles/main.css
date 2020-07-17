@@ -117,6 +117,7 @@ span {
 	grid-area: qual;
 	padding: 2em;
 	background-color: blue;
+	height: 600px;
 }
 
 .works {
