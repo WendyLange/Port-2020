@@ -1,15 +1,77 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Raleway', Arial, sans-serif;
-  /*background-color: #ffc200;*/
-  background-color: #6E7D75;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	font-family: 'Raleway', Arial, sans-serif;
+ 	/*background-color: #ffc200;*/
+ 	background-color: #6E7D75;
 
+}
+
+p {
+	font-size: 16px;
 }
 
 .heading {
 	height: 90px;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 3em;
+  color: #EBA966;
+  text-transform: uppercase;
+  font-family: 'tradegothiclt-bold', sans-serif;
+  text-align: center;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/*Animated arrow section*/
+.arrow{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 .wrappercontent {
@@ -36,7 +98,8 @@ body {
 .intro {
 	grid-area: introduc;
 	padding: 2em;
-	background-color: red;
+	margin: 4em 6em;
+	/*background-color: red;*/
 }
 
 .quality {

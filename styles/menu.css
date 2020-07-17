@@ -125,4 +125,42 @@
   cursor: pointer;
 }
 
+.footer {
+  height: 200px;
+  background-color: blue;
+  display: grid;
+  width: 100%;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "foottext footbuttone footbuttwo foodbutthree";
+}
 
+.footer__buttons {
+  display: flex;
+  margin: 2em;
+}
+
+.footer__text{
+  grid-area: foottext;
+  padding: 2em;
+}
+
+.footer__buttone{
+  grid-area: footbuttone;
+  padding: 2em;
+}
+
+.footer__butttwo{
+  grid-area: footbuttwo;
+  padding: 2em;
+}
+
+.footer__buttthree{
+  grid-area: foodbutthree;
+  padding: 2em;
+}
+
+.buttone:hover {
+  fill: #EBA966;
+}
