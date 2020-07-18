@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet");
+
 body {
  	margin: 0px;
  	padding: 0px;
@@ -10,6 +12,13 @@ body {
 
 p {
 	font-size: 16px;
+}
+
+h2 {
+	letter-spacing: 4px;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	margin-left: 2em;
 }
 
 .heading {
@@ -117,13 +126,13 @@ span {
 	grid-area: qual;
 	padding: 2em;
 	padding-top: 4em;
-	height: 800px;
+	height: 850px;
 }
 
 .works {
 	grid-area: work;
-	padding: 2em;
-	background-color: purple;
+	padding-top: 2em;
+	padding-left: 2em;
 	height: 50px;
 }
 
@@ -155,6 +164,10 @@ span {
 	height: 380px;
 }
 
+.worksone, .workstwo, .worksthree, .worksfour {
+	margin-bottom: 4em;
+}
+
 .hire {
 	grid-area: hired;
 	padding: 2em;
@@ -164,6 +177,7 @@ span {
 .hire__side {
 	grid-area: hiredimg;
 	padding: 2em;
+	padding-bottom: 5em;
 }
 
 .hire__side img {
