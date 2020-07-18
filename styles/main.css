@@ -178,6 +178,81 @@ span {
 }
 
 
+.quality__cards {
+	display: grid;
+	width: 100%;
+	grid-row-gap: 4em;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"cardone cardtwo cardthree cardfour"
+		"cardfive cardsix cardseven cardeight";
+}
+
+.card-one {
+	grid-area: cardone;
+	padding: 2em;
+}
+
+.card-two {
+	grid-area: cardtwo;
+	padding: 2em;
+}
+
+.card-three {
+	grid-area: cardthree;
+	padding: 2em;
+}
+
+.card-four {
+	grid-area: cardfour;
+	padding: 2em;
+}
+
+.card-five {
+	grid-area: cardfive;
+	padding: 2em;
+}
+
+.card-six {
+	grid-area: cardsix;
+	padding: 2em;
+}
+
+.card-seven {
+	grid-area: cardseven;
+	padding: 2em;
+}
+
+.card-eight {
+	grid-area: cardeight;
+	padding: 2em;
+}
+
+
+.twist {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  background-color: green;
+   margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.quality__cards img {
+  border-radius: 5px 5px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  
+}
+
+
 
 figure.snip1091 {
   position: relative;
