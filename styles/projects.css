@@ -1,0 +1,29 @@
+.aboutwrap {
+	display: grid;
+	width: 100%;
+	min-height: 100%;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
+	grid-template-areas: 
+		"picper picper pictext pictext";
+}
+
+.picperfect {
+	grid-area: picper;
+}
+
+.picperfect img {
+	margin-top: 2em;
+	height: 800px;
+	opacity: 0.8;
+}
+
+.pic__text {
+	grid-area: pictext;
+	padding: 1em;
+	margin-top: 8em;
+}
+
+.pic__text h2 {
+	font-size: 50px;
+	color: #EBA966;
+}
