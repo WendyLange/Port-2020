@@ -126,7 +126,9 @@ span {
 	grid-area: qual;
 	padding: 2em;
 	padding-top: 4em;
-	height: 850px;
+	height: 700px;
+	margin-left: 10em;
+	margin-right: 10em;
 }
 
 .works {
@@ -141,6 +143,7 @@ span {
 	padding: 2em;
 	/*background-color: green;*/
 	height: 380px;
+	margin-left: 3em;
 }
 
 .workstwo {
@@ -162,6 +165,7 @@ span {
 	padding: 2em;
 	/*background-color: lightblue;*/
 	height: 380px;
+	margin-right: 3em;
 }
 
 .worksone, .workstwo, .worksthree, .worksfour {
@@ -282,7 +286,7 @@ b {
 	width:90%;
 }
 
-.card-title {
+.card-title, .card-text {
 	text-align: center;
 }
 
