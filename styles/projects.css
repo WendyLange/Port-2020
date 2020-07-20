@@ -1,3 +1,4 @@
+/*About me page details*/
 .aboutwrap {
 	display: grid;
 	width: 100%;
@@ -20,10 +21,10 @@
 .pic__text {
 	grid-area: pictext;
 	padding: 1em;
-	margin-top: 8em;
+	margin-top: 3em;
 }
 
-.pic__text h3 {
+.pic__text, .projwrap h3 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 40px;
 	color: #EBA966;
@@ -34,4 +35,67 @@
 	font-size: 60px;
 	color: #EBA966;
 	letter-spacing: .1em;
+}
+
+/*Projects page details*/
+.projwrap {
+	display: grid;
+	width: 100%;
+	min-height: 100%;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
+	grid-template-areas: 
+		"projtext projtext projtext projtext"
+		"projtab projtab projtab projtab";
+}
+
+.projwrap h5 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+	color: #EBA966;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.proj__text {
+	grid-area: projtext;
+	padding: 1em;
+	margin-top: 7em;
+}
+
+/* Style the tab */
+.tab {
+	grid-area: projtab;
+  	overflow: hidden;
+  	border: 1px solid #ccc;
+ 	background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }

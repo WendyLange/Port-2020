@@ -11,7 +11,7 @@
 </head>
 
 	<body>
-
+		<!-- header section, will be shown on every page -->
 		<header>
 			<nav class="menlist">
 			  <a href="../index.html">Home</a>
@@ -21,8 +21,55 @@
 			</nav>
 		</header>
 			
-		<div>
-			<!-- header section, will be shown on every page -->
+		<div class="projwrap">
+			<div class="proj__text">
+				<h5>PROJECTS</h5>
+				<p>Here you have an overview of the projects that I have worked on. Click on the buttons inside the tabbed menu to see the projects:</p>
+			</div>
+			
+
+			<div class="tab">
+			  <button class="tablinks" onclick="openCity(event, 'London')">Project 1</button>
+			  <button class="tablinks" onclick="openCity(event, 'Paris')">Project 2</button>
+			  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Project 3</button>
+			  <button class="tablinks" onclick="openCity(event, 'Miami')">Project 4</button>
+			</div>
+
+			<div id="London" class="tabcontent">
+			  <h3>Project 1</h3>
+			  <p>London is the capital city of England.</p>
+			</div>
+
+			<div id="Paris" class="tabcontent">
+			  <h3>Project 2</h3>
+			  <p>Paris is the capital of France.</p> 
+			</div>
+
+			<div id="Tokyo" class="tabcontent">
+			  <h3>Project 3</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
+
+			<div id="Miami" class="tabcontent">
+			  <h3>Project 4</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
+
+			<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			</script>
 		
 		</div>
 
