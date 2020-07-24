@@ -21,6 +21,11 @@ h2 {
 	margin-left: 2em;
 }
 
+h5 {
+	font-size: 1em;
+	font-style: bold;
+}
+
 .heading {
 	height: 90px;
 }
