@@ -99,3 +99,28 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+/*About me page details*/
+.londenn {
+	display: grid;
+	width: 100%;
+	min-height: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"loninto loninto loninto loninto"
+		"lonbrif lonbrif lonbrifimg lonbrifimg";
+}
+
+.lontitle {
+	grid-area: loninto;
+}
+
+.lonbrief {
+	grid-area: lonbrif;
+	background-color: pink;
+}
+
+.lonbriefimg {
+	grid-area: lonbrifimg;
+	background-color: orange;
+}
