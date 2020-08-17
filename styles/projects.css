@@ -39,88 +39,264 @@
 
 /*Projects page details*/
 .projwrap {
+	padding-top: 10em;
 	display: grid;
 	width: 100%;
-	min-height: 100%;
-	grid-template-columns: 1fr 1fr 1fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-		"projtext projtext projtext projtext"
-		"projtab projtab projtab projtab";
+		"projtext projtext projtext proimg"
+		"proimgone proimgtwo proimgthree proimgfour"
+		"projtwee projtwee projtwee projtweeimg"
+		"projtweeimgone projtweeimgtwo projtweeimgthree projtweeimgfour"
+		"projthree projthree projthree projthreeimg"
+		"projthreeimgone projthreeimgtwo projthreeimgthree projthreeimgfour"
+		"projfour projfour projfour projfourimg"
+		"projfourimgone projfourimgtwo projfourimgthree projfourimgfour";
 }
 
 .projwrap h5 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 40px;
 	color: #EBA966;
-	text-align: center;
-	padding-bottom: 1em;
+	/*text-align: center;*/
+	padding-bottom: .5em;
 }
 
-.proj__text {
+.pay__text {
 	grid-area: projtext;
 	padding: 1em;
-	margin-top: 7em;
+	margin-left: 3em;
+
 }
 
-/* Style the tab */
-.tab {
-	grid-area: projtab;
-  	overflow: hidden;
-  	border: 1px solid #ccc;
- 	background-color: #f1f1f1;
+.pay__img img {
+	grid-area: proimg;
+	padding: 3em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 300px;
+	max-height: 400px;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+.pay__imga img {
+	grid-area: proimgone;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.pay__imgb img {
+	grid-area: proimgtwo;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.pay__imgc img {
+	grid-area: proimgthree;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
 }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+.pay__imgd img {
+	grid-area: proimgfour;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
 }
 
-/*About me page details*/
-.londenn {
-	display: grid;
-	width: 100%;
-	min-height: 100%;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: 
-		"loninto loninto loninto loninto"
-		"lonbrif lonbrif lonbrifimg lonbrifimg";
+
+/*project 2 details*/
+.proj2__text {
+	grid-area: projtwee;
+	padding: 1em;
+	margin-top: 100px;
+	margin-left: 3em;
 }
 
-.lontitle {
-	grid-area: loninto;
+.pro2__img img {
+	grid-area: projtweeimg;
+	padding: 3em;
+	display: block;
+	margin-top: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 300px;
+	max-height: 400px;
 }
 
-.lonbrief {
-	grid-area: lonbrif;
-	background-color: pink;
+.pro2__imga img {
+	grid-area: projtweeimgone;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
 }
 
-.lonbriefimg {
-	grid-area: lonbrifimg;
-	background-color: orange;
+.pro2__imgb img {
+	grid-area: projtweeimgtwo;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro2__imgc img {
+	grid-area: projtweeimgthree;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro2__imgd img {
+	grid-area: projtweeimgfour;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+/*project 3 details*/
+.proj3__text {
+	grid-area: projthree;
+	padding: 1em;
+	margin-top: 100px;
+	margin-left: 3em;
+}
+
+.pro3__img img {
+	grid-area: projthreeimg;
+	padding: 3em;
+	display: block;
+	margin-top: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 300px;
+	max-height: 400px;
+}
+
+.pro3__imga img {
+	grid-area: projthreeimgone;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro3__imgb img {
+	grid-area: projthreeimgtwo;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro3__imgc img {
+	grid-area: projthreeimgthree;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro3__imgd img {
+	grid-area: projthreeimgfour;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+/*project 4 details*/
+.proj4__text {
+	grid-area: projfour;
+	padding: 1em;
+	margin-top: 100px;
+	margin-left: 3em;
+}
+
+.pro4__img img {
+	grid-area: projfourimg;
+	padding: 3em;
+	display: block;
+	margin-top: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 300px;
+	max-height: 400px;
+}
+
+.pro4__imga img {
+	grid-area: projfourimgone;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro4__imgb img {
+	grid-area: projfourimgtwo;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro4__imgc img {
+	grid-area: projfourimgthree;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.pro4__imgd img {
+	grid-area: projfourimgfour;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 200px;
+	max-height: 300px;
+}
+
+.spacey {
+	height: 5em;
 }
