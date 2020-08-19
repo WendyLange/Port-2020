@@ -39,6 +39,14 @@ h1 {
   text-align: center;
 }
 
+svg {
+	width: 70px;
+	height: 70px;
+}
+svg:hover {
+	fill: red;
+}
+
 span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
@@ -122,7 +130,7 @@ span {
 
 .intro {
 	grid-area: introduc;
-	padding: 2em;
+	padding: 3em;
 	margin: 4em 6em;
 	/*background-color: red;*/
 }
@@ -179,12 +187,14 @@ span {
 
 .hire {
 	grid-area: hired;
-	padding: 2em;
-	background-color: pink;
+	padding: 3em;
+	margin-top: 2em;
+	/*background-color: pink;*/
 }
 
 .hire__text {
 	margin: 3em;
+	padding-top: 1em;
 
 }
 
@@ -406,3 +416,21 @@ figure.snip1091.hover figcaption:after {
   width: 200%;
 }
 
+
+/*contact button on main page*/
+
+.button-contact {
+	width: 300px;
+	height: 50px;
+	background-color: #EBA966;
+	color: #0E2A47;
+	border-style: none;
+	margin-top: 60px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.button-contact:hover {
+	background-color: #000000;
+	color: #EBA966;
+}

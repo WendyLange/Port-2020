@@ -66,7 +66,6 @@
 	grid-area: projtext;
 	padding: 1em;
 	margin-left: 3em;
-
 }
 
 .pay__img img {
@@ -299,4 +298,31 @@
 
 .spacey {
 	height: 5em;
+}
+
+/*Contact page info!!!*/
+.contwrap {
+	padding-top: 10em;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"context context context conimg conimg"
+		"context context context conimg conimg";
+}
+
+.contact__text {
+	grid-area: context;
+	padding: 1em;
+	margin-left: 3em;
+}
+
+.contact__img img {
+	grid-area: conimg;
+	padding: 1em;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-height: 350px;
+	max-height: 400px;
 }
