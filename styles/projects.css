@@ -308,13 +308,24 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
 		"context context context conimg conimg"
-		"context context context conimg conimg";
+		"cinfo cinfo cinfo conimg conimg";
 }
 
 .contact__text {
 	grid-area: context;
 	padding: 1em;
 	margin-left: 3em;
+}
+
+.contact-info {
+	grid-area: cinfo;
+	padding: 3em;
+	margin: 3em;
+	margin-left: 5em;
+}
+
+.contact-info p {
+	font-size: 18px;
 }
 
 .contact__img img {

@@ -433,4 +433,5 @@ figure.snip1091.hover figcaption:after {
 .button-contact:hover {
 	background-color: #0E2A47;
 	color: #EBA966;
+	cursor: pointer;
 }
