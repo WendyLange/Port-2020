@@ -76,7 +76,7 @@
 
 /*Footer section details*/
 .footer {
-  height: 200px;
+  height: 110px;
   background-color: #697770;
   display: grid;
   width: 100%;
@@ -88,26 +88,31 @@
 
 .footer__buttons {
   display: flex;
-  margin: 2em;
+  margin: 1em;
 }
 
 .footer__text{
   grid-area: foottext;
-  padding: 2em;
+  padding: 1em;
+  padding-left: 6em;
 }
 
 .footer__buttone{
   grid-area: footbuttone;
-  padding: 2em;
+  padding: 1em;
 }
 
 
 .footer__butttwo{
   grid-area: footbuttwo;
-  padding: 2em;
+  padding: 1em;
 }
 
 .footer__buttthree{
   grid-area: foodbutthree;
-  padding: 2em;
+  padding: 1em;
+}
+
+.footer__buttone, .footer__butttwo, .footer__buttthree img: hover {
+  cursor: pointer;
 }
