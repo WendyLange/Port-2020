@@ -12,6 +12,9 @@ body {
 
 p {
 	font-size: 16px;
+	color: #000000; 
+	/*font-size: 20px; */
+	font-style: bold;
 }
 
 h2 {
@@ -434,4 +437,78 @@ figure.snip1091.hover figcaption:after {
 	background-color: #0E2A47;
 	color: #EBA966;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	p {
+		font-size: 13px;
+	}
+
+	h2 {
+		letter-spacing: 2px;
+		font-family: 'Nunito', sans-serif;
+		text-transform: uppercase;
+		margin-left: .5em;
+	}
+
+	h5 {
+		font-size: .3em;
+		font-style: bold;
+	}
+
+	h1 {
+	  font-size: 2em;
+	  margin-top: 250px;
+	  color: #EBA966;
+	  text-transform: uppercase;
+	  font-family: 'tradegothiclt-bold', sans-serif;
+	  text-align: center;
+	}
+
+	.wrappercontent {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"starting starting"
+			"introduc introduc"
+			"qual qual"
+			"work work"
+			"workone""worktwo"
+			"workthree""workfour"
+			"hired hired"
+			"hiredimg hiredimg";
+	}
+
+	.start{
+		grid-area: starting;
+		padding: 0em;
+		height: 600px;
+	}
+
+	.intro {
+		grid-area: introduc;
+		padding: .2em;
+		margin: 3em 3em;
+		/*background-color: red;*/
+	}
+
+	.quality__cards {
+		display: grid;
+		width: 100%;
+		grid-row-gap: 1em;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"cardone cardtwo""cardthree cardfour"
+			"cardfive cardsix""cardseven cardeight";
+	}
+
+	.quality__cards img {
+	  border-radius: 5px 5px 0 0;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width:25%;
+	}
+
 }
